@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+ 
+// function to start app building
+void main() => runApp(const MyApp());
+ 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+ 
+// This widget is the root
+// of your application
+ 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(title: 'Skeleton Watcher',
+      home: Scaffold(
+        appBar: AppBar(
+        ),
+       
+        body: Center(
+         
+          child: Column(
+            children: <Widget>[
+              //Image.asset
+              Text('Welcome to Flutter circle GDSD-IGDTUW !'),
+              Image.network (
+                'https://www.bing.com/th?id=OIP.nI0YocbKuw2038jFv_VDfQHaD4&w=186&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2',
+                height: 300,
+                width: 400,
+              ), 
+            ], //<Widget>[]
+          ), //Column
+        ), 
+      ),
+    );
+  }
+}
